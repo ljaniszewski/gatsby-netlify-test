@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import { rhythm, scale } from '../utils/typography'
+import Helmet from 'react-helmet/es/Helmet'
 
 class Layout extends React.Component {
   render() {
@@ -60,6 +60,21 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        <Helmet>
+          <script>
+            {`
+              if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                 if (!user) {
+                 window.netlifyIdentity.on("login", () => {
+                 document.location.href = "/admin/";
+               });
+            }
+            });
+            }
+          `}
+          </script>
+        </Helmet>
         {header}
         {children}
         <footer>
