@@ -8,4 +8,4 @@ to spawn one of these, press Enter to bring up the chat window, and then, in the
 
 `howdoyouturnthison`
 
-![corvette](/static/uploads/d8ed11ff7686d8444c354383c498f87de3755724_full.jpg "AoE II Corvette")
+![corvette](/uploads/d8ed11ff7686d8444c354383c498f87de3755724_full.jpg "AoE II Corvette")
